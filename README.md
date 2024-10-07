@@ -1,1 +1,1 @@
-# gitstats.nvim
+# sessionizer.nvim
