@@ -3,7 +3,7 @@ local M = {}
 
 local defaults = {
     sources = {
-        "~/Documents"
+        "~/"
     }
 }
 

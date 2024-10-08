@@ -17,6 +17,7 @@ local function open_tmux_session(selected, selected_name, tmux_running)
     end
 end
 
+
 local function create_dir_table(directories)
     local dir_list = {}
     for _, dir in ipairs(directories) do
