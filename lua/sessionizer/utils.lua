@@ -25,7 +25,9 @@ local function create_dir_table(directories)
             for local_dir in vim.fs.dir(expanded_dir) do
                 local expanded_local_dir = vim.fn.expand(local_dir)
                 local path = expanded_dir .. '/' .. expanded_local_dir
-                table.insert(dir_list, path)
+                if vim.fn.isdirectory(path) == 1 then
+                    table.insert(dir_list, path)
+                end
             end
         end
     end
